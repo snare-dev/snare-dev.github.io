@@ -1,0 +1,86 @@
+<?php include('server.php') ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LOGIN FORM</title>
+
+	<style type="text/css">
+		
+		form{
+			text-align: center;
+			margin-top: 50px;
+
+		}
+
+		.container{
+			position: relative;
+			border: 1px solid gray;
+			border-radius: 10px;
+			width: 400px;
+			height: 250px;
+			display: inline-block;
+		}
+
+		#email{
+			margin-left: 20px;
+		}
+
+		.formItem{
+			margin: 10px;
+		}
+
+		#wrapper{
+			text-align: center;
+		}
+
+	</style>
+
+</head>
+
+<body bgcolor="aqua">
+
+	<div id="wrapper">
+
+			<div  style="text-align: center;">
+
+				<img src="logo.png">
+
+				<h1>UNIVERSITY OF DAR ES SALAAM</h1>
+
+				<h1>ATTENDANCE REGISTER</h1>
+
+			</div>
+			
+
+			<div class="container">
+
+				<?php include('error.php') ?>
+
+				<form action="login.php" method="post">
+
+					<div class="formItem">
+
+						<label for="email" id="email">Email</label>
+						<input type="text" name="email">
+
+					</div>
+
+					<div class="formItem">
+
+						<label for="password">Password</label>
+						<input type="text" name="password">
+
+					</div>
+
+
+					<p><button type="submit" name="login">Log in</button></p>
+
+				</form>
+
+			</div>
+
+	</div>
+	
+</body>
+</html>
